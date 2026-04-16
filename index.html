@@ -226,6 +226,15 @@ small{font-size:.72rem;color:var(--mut);}
   .ressenti-grid{grid-template-columns:repeat(3,1fr);}
 }
 </style>
+  <link rel="manifest" href="/plan-norvegien-femme/manifest.json">
+<meta name="theme-color" content="#9d174d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Plan Femme">
+<script>
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/plan-norvegien-femme/sw.js');
+}
+</script>
 </head>
 <body>
 
