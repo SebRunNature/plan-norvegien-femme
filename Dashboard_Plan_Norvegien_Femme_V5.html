@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan Norvégien Femme v5 v3 — Cycle, Profil Hormonal &amp; Performance — Seb Run Nature</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --g:#2d9e72;--g2:#1e7a56;--g3:#0d3326;
+  --glt:#e8f7f1;--glt2:#f0fdf4;
+  --rose:#e879a0;--rose-lt:#fce7f3;--rose-dk:#9d174d;
+  --amber:#e8a020;--amber-lt:#fef3c7;
+  --red:#e05252;--red-lt:#fee2e2;
+  --violet:#7c3aed;--violet-lt:#ede9fe;
+  --sky:#3a7bd5;--sky-lt:#dbeafe;
+  --bg:#f9f5f7;--card:#ffffff;
+  --text:#1e2e28;--mut:#6b7280;--brd:#e5d5de;
+  --shad:0 4px 24px rgba(232,121,160,.10);
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;font-size:15px;line-height:1.6;min-height:100vh;}
+
+/* HEADER */
+.header{background:linear-gradient(135deg,#4a1535,#9d174d,var(--rose));padding:22px 24px;display:flex;align-items:center;gap:14px;box-shadow:0 4px 20px rgba(157,23,77,.3);}
+.header-title{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:#fff;letter-spacing:1px;line-height:1;}
+.header-sub{font-size:.75rem;color:rgba(255,255,255,.65);font-weight:600;letter-spacing:.5px;text-transform:uppercase;}
+.header-badge{margin-left:auto;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:20px;padding:4px 14px;font-size:.72rem;font-weight:700;letter-spacing:.5px;}
+
+/* WRAP */
+.wrap{max-width:920px;margin:0 auto;padding:28px 16px 60px;}
+
+/* CARDS */
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--shad);padding:24px;margin-bottom:20px;border:1px solid rgba(232,121,160,.08);}
+.card-title{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:1px;color:var(--rose-dk);margin-bottom:18px;display:flex;align-items:center;gap:8px;}
+
+/* FORM */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.form-group{display:flex;flex-direction:column;gap:6px;}
+.form-group.full{grid-column:1/-1;}
+label{font-size:.78rem;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.4px;}
+input,select{width:100%;padding:10px 14px;border:1.5px solid var(--brd);border-radius:9px;font-size:.9rem;font-family:'Nunito',sans-serif;color:var(--text);background:#fff;transition:border-color .2s;}
+input:focus,select:focus{outline:none;border-color:var(--rose);}
+small{font-size:.72rem;color:var(--mut);}
+
+/* CHEMIN */
+.chemin-toggle{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px;}
+.chemin-btn{padding:12px;border:2px solid var(--brd);border-radius:10px;background:#fff;cursor:pointer;text-align:center;transition:all .2s;font-family:'Nunito',sans-serif;}
+.chemin-btn.active{border-color:var(--rose);background:var(--rose-lt);color:var(--rose-dk);}
+.chemin-btn .cb-icon{font-size:1.4rem;display:block;margin-bottom:4px;}
+.chemin-btn .cb-label{font-size:.82rem;font-weight:700;display:block;}
+.chemin-btn .cb-sub{font-size:.7rem;color:var(--mut);display:block;margin-top:2px;}
+.chemin-section{display:none;}
+.chemin-section.show{display:block;}
+
+/* TEST BOX */
+.test-box{background:var(--amber-lt);border:1px solid #fcd99a;border-radius:12px;padding:18px 20px;margin-bottom:16px;}
+.test-box h4{color:#92400e;font-size:.88rem;font-weight:800;margin-bottom:8px;}
+.test-steps{list-style:none;counter-reset:step;}
+.test-steps li{counter-increment:step;padding:6px 0 6px 32px;position:relative;font-size:.83rem;}
+.test-steps li::before{content:counter(step);position:absolute;left:0;top:6px;width:22px;height:22px;background:var(--amber);color:#fff;border-radius:50%;font-size:.7rem;font-weight:800;display:flex;align-items:center;justify-content:center;}
+
+/* CYCLE SECTION */
+.cycle-section{background:linear-gradient(135deg,#fdf2f8,#fce7f3);border:1px solid #f9a8d4;border-radius:var(--r);padding:20px 22px;margin-bottom:20px;}
+.cycle-title{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--rose-dk);letter-spacing:1px;margin-bottom:14px;}
+.cycle-info{font-size:.78rem;color:var(--mut);line-height:1.6;margin-bottom:14px;padding:10px 14px;background:rgba(255,255,255,.7);border-radius:8px;}
+.cycle-phases-preview{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px;}
+.phase-pill{padding:10px 8px;border-radius:10px;text-align:center;}
+.phase-pill .pp-icon{font-size:1.1rem;display:block;margin-bottom:4px;}
+.phase-pill .pp-name{font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.3px;display:block;}
+.phase-pill .pp-days{font-size:.65rem;display:block;margin-top:2px;opacity:.7;}
+.ph-regles{background:#fee2e2;color:#991b1b;}
+.ph-follic{background:#dcfce7;color:#166534;}
+.ph-ovul{background:var(--amber-lt);color:#92400e;}
+.ph-luteal{background:var(--violet-lt);color:#5b21b6;}
+
+/* ALERTE */
+.alerte{padding:12px 16px;border-radius:10px;font-size:.82rem;font-weight:700;margin:10px 0;display:flex;align-items:flex-start;gap:10px;}
+.alerte-warning{background:var(--amber-lt);border:1px solid #fcd99a;color:#92400e;}
+.alerte-danger{background:var(--red-lt);border:1px solid #fca5a5;color:#991b1b;}
+.alerte-info{background:var(--glt);border:1px solid #6ee7b7;color:var(--g2);}
+.alerte-violet{background:var(--violet-lt);border:1px solid #c4b5fd;color:#5b21b6;}
+
+/* LÉGENDE ZONES */
+.zones-legend{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
+.zone-pill{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:20px;font-size:.75rem;font-weight:700;}
+.z-ef{background:#dcfce7;color:#166534;}
+.z-s1{background:#fef9c3;color:#854d0e;}
+.z-s2{background:#ffedd5;color:#9a3412;}
+.z-max{background:#fee2e2;color:#991b1b;}
+
+/* BTN */
+.btn-gen{width:100%;padding:16px;background:linear-gradient(135deg,var(--rose-dk),var(--rose));color:#fff;border:none;border-radius:11px;font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:2px;cursor:pointer;transition:opacity .2s;margin-top:8px;}
+.btn-gen:hover{opacity:.88;}
+
+/* PLAN OUTPUT */
+#planOutput{display:none;}
+.plan-header{background:linear-gradient(135deg,#4a1535,#9d174d);border-radius:var(--r);padding:24px;margin-bottom:20px;color:#fff;}
+.plan-title{font-family:'Bebas Neue',sans-serif;font-size:1.9rem;letter-spacing:1px;color:#fbcfe8;margin-bottom:6px;}
+.plan-meta{font-size:.82rem;color:rgba(255,255,255,.65);display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px;}
+.plan-allures{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;}
+.pac-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:10px 14px;text-align:center;}
+.pac-val{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:#fbcfe8;line-height:1;}
+.pac-lbl{font-size:.65rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.4px;margin-top:3px;}
+
+/* CYCLE INDICATOR */
+.cycle-indicator{background:linear-gradient(135deg,#fdf2f8,#fce7f3);border:1px solid #f9a8d4;border-radius:12px;padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.ci-phase{flex:1;min-width:160px;}
+.ci-phase-name{font-size:.9rem;font-weight:800;color:var(--rose-dk);}
+.ci-phase-sub{font-size:.75rem;color:var(--mut);}
+.ci-actions{display:flex;gap:8px;flex-wrap:wrap;}
+.ci-btn{padding:6px 14px;border-radius:8px;font-size:.75rem;font-weight:700;cursor:pointer;border:1.5px solid;font-family:'Nunito',sans-serif;transition:all .2s;}
+.ci-btn-cycle{background:var(--rose-lt);color:var(--rose-dk);border-color:var(--rose);}
+
+/* WEEK NAV */
+.week-nav{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap;}
+.week-nav-btn{padding:8px 18px;border:1.5px solid var(--brd);border-radius:8px;background:#fff;cursor:pointer;font-family:'Nunito',sans-serif;font-size:.85rem;font-weight:700;color:var(--text);transition:all .2s;}
+.week-nav-btn:hover:not(:disabled){border-color:var(--rose);color:var(--rose-dk);}
+.week-nav-btn:disabled{opacity:.35;cursor:default;}
+.week-info{flex:1;text-align:center;}
+.week-num{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--rose-dk);letter-spacing:1px;}
+.week-phase{font-size:.72rem;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+.week-progress{height:4px;background:var(--rose-lt);border-radius:4px;margin-bottom:20px;overflow:hidden;}
+.week-progress-fill{height:100%;background:linear-gradient(90deg,var(--rose-dk),var(--rose));border-radius:4px;transition:width .4s ease;}
+
+/* WEEK GRID */
+.week-grid{display:grid;gap:10px;}
+.day-card{background:#fff;border:1px solid var(--brd);border-radius:12px;overflow:hidden;}
+.day-header{padding:10px 16px;display:flex;align-items:center;justify-content:space-between;}
+.day-name{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.5px;}
+.day-phase-tag{font-size:.65rem;font-weight:700;padding:2px 8px;border-radius:8px;}
+.day-sessions{padding:0 16px 14px;display:flex;flex-direction:column;gap:8px;}
+.session{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:8px;}
+.session-time{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--mut);min-width:48px;padding-top:2px;}
+.session-content{flex:1;}
+.session-title{font-size:.83rem;font-weight:700;margin-bottom:2px;}
+.session-detail{font-size:.75rem;color:var(--mut);line-height:1.5;}
+.s-ef{background:#dcfce7;}.s-ef .session-title{color:#166534;}
+.s-s1{background:#fef9c3;}.s-s1 .session-title{color:#854d0e;}
+.s-s2{background:#ffedd5;}.s-s2 .session-title{color:#9a3412;}
+.s-max{background:#fee2e2;}.s-max .session-title{color:#991b1b;}
+.s-renfo{background:#ede9fe;}.s-renfo .session-title{color:#5b21b6;}
+.s-repos{background:#f3f4f6;}.s-repos .session-title{color:#6b7280;}
+.session-check{display:flex;align-items:center;gap:8px;padding:6px 12px;border-top:1px solid rgba(0,0,0,.06);cursor:pointer;user-select:none;}
+.session-check input[type=checkbox]{width:16px;height:16px;accent-color:var(--rose);cursor:pointer;flex-shrink:0;}
+.session-check-label{font-size:.72rem;color:var(--mut);font-weight:600;}
+.session.done{opacity:.55;position:relative;}
+.session.done::after{content:'Effectuee';position:absolute;top:6px;right:10px;font-size:.65rem;font-weight:800;color:var(--rose-dk);background:var(--rose-lt);border-radius:6px;padding:1px 7px;}
+.week-summary{margin-top:12px;background:var(--bg);border:1px solid var(--brd);border-radius:12px;padding:16px 20px;}
+.ws-title{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--mut);margin-bottom:10px;}
+.ws-bar-wrap{background:#e5e7eb;border-radius:6px;height:10px;overflow:hidden;margin-bottom:10px;}
+.ws-bar{height:100%;background:linear-gradient(90deg,var(--rose),var(--rose-dk));border-radius:6px;transition:width .4s ease;}
+.ws-stats{display:flex;gap:16px;align-items:center;flex-wrap:wrap;}
+.ws-pct{font-size:1.4rem;font-weight:800;color:var(--rose-dk);}
+.ws-detail{font-size:.78rem;color:var(--mut);}
+.ws-msg{margin-top:10px;font-size:.82rem;font-style:italic;color:var(--text);padding:8px 14px;background:#fff;border-left:3px solid var(--rose);border-radius:0 8px 8px 0;line-height:1.6;}
+.btn-print-week{display:flex;align-items:center;gap:7px;padding:9px 18px;background:var(--bg);border:1.5px solid var(--brd);border-radius:9px;font-family:'Nunito',sans-serif;font-size:.82rem;font-weight:700;color:var(--text);cursor:pointer;transition:border-color .2s;}
+.btn-print-week:hover{border-color:var(--rose);color:var(--rose-dk);}
+.warn-local{font-size:.68rem;color:#9ca3af;margin-top:8px;text-align:center;}
+.s-regles{background:#fce7f3;}.s-regles .session-title{color:#9d174d;}
+.s-ovul{background:#fef3c7;}.s-ovul .session-title{color:#92400e;}
+
+/* CYCLE MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);align-items:center;justify-content:center;padding:16px;}
+.modal-overlay.open{display:flex;}
+.modal-box{background:#fff;border-radius:18px;max-width:480px;width:100%;padding:28px;box-shadow:0 24px 60px rgba(0,0,0,.25);}
+.modal-title{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--rose-dk);letter-spacing:1px;margin-bottom:18px;}
+.modal-close{float:right;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--mut);}
+
+/* RESSENTI TRACKER */
+.ressenti-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:8px;}
+.ressenti-btn{padding:8px 4px;border:2px solid var(--brd);border-radius:8px;background:#fff;cursor:pointer;text-align:center;font-size:.72rem;font-weight:700;transition:all .2s;font-family:'Nunito',sans-serif;}
+.ressenti-btn.selected{border-color:var(--rose);background:var(--rose-lt);color:var(--rose-dk);}
+
+/* ACTIONS */
+.actions-bar{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.btn-action{padding:10px 18px;border-radius:9px;font-family:'Nunito',sans-serif;font-size:.82rem;font-weight:700;cursor:pointer;border:1.5px solid;transition:all .2s;}
+.btn-save{background:var(--rose);color:#fff;border-color:var(--rose);}
+.btn-export{background:#fff;color:var(--rose-dk);border-color:var(--rose);}
+.btn-import{background:#fff;color:var(--mut);border-color:var(--brd);}
+.btn-reset{background:#fff;color:var(--red);border-color:var(--red);}
+
+/* PROFIL HORMONAL */
+.profil-section{background:linear-gradient(135deg,#fdf2f8,#fce7f3);border:1px solid #f9a8d4;border-radius:var(--r);padding:20px 22px;margin-bottom:20px;}
+.profil-title{font-family:"Bebas Neue",sans-serif;font-size:1.1rem;color:var(--rose-dk);letter-spacing:1px;margin-bottom:6px;}
+.profil-sub{font-size:.78rem;color:var(--mut);margin-bottom:14px;line-height:1.6;}
+
+/* GRAPHIQUE CYCLE */
+.cycle-graph-wrap{background:#fff;border:1px solid var(--brd);border-radius:12px;padding:16px;margin:14px 0;}
+.cycle-graph-svg{width:100%;height:90px;display:block;}
+.cycle-graph-days{display:flex;justify-content:space-between;font-size:.65rem;font-weight:700;color:var(--mut);text-transform:uppercase;margin-top:6px;padding:0 4px;}
+.cycle-tooltip{position:absolute;background:#1a1a1a;color:#fff;font-size:.72rem;padding:5px 10px;border-radius:7px;pointer-events:none;display:none;white-space:nowrap;z-index:10;}
+
+/* EXPLICATION CYCLE */
+.cycle-explainer{margin:16px 0;}
+.phase-explainer{display:grid;grid-template-columns:auto 1fr;gap:10px 14px;padding:12px 0;border-bottom:1px solid var(--brd);align-items:start;}
+.phase-explainer:last-child{border-bottom:none;}
+.phase-dot{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;margin-top:2px;}
+.phase-explainer-title{font-size:.85rem;font-weight:800;color:var(--text);margin-bottom:3px;}
+.phase-explainer-body{font-size:.78rem;color:var(--mut);line-height:1.6;}
+.phase-explainer-tip{font-size:.73rem;font-weight:700;margin-top:5px;padding:4px 10px;border-radius:8px;display:inline-block;}
+.tip-green{background:#dcfce7;color:#166534;}
+.tip-yellow{background:#fef9c3;color:#854d0e;}
+.tip-red{background:#fee2e2;color:#991b1b;}
+.tip-violet{background:var(--violet-lt);color:#5b21b6;}
+
+/* PILULE MODE */
+.pilule-banner{background:linear-gradient(135deg,#dbeafe,#e0e7ff);border:1px solid #93c5fd;border-radius:10px;padding:12px 16px;font-size:.82rem;color:#1e40af;margin-top:12px;display:none;}
+.pilule-banner.show{display:block;}
+
+/* FOOTER */
+.footer{text-align:center;padding:24px 16px;font-size:.78rem;color:var(--mut);border-top:1px solid var(--brd);margin-top:20px;}
+.footer a{color:var(--rose);font-weight:700;text-decoration:none;}
+.footer a:hover{text-decoration:underline;}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:#4a1535;color:#fbcfe8;padding:12px 22px;border-radius:10px;font-size:.85rem;font-weight:700;z-index:9999;transition:transform .3s;pointer-events:none;}
+.toast.show{transform:translateX(-50%) translateY(0);}
+
+@media(max-width:600px){
+  .form-grid{grid-template-columns:1fr;}
+  .form-group.full{grid-column:1;}
+  .cycle-phases-preview{grid-template-columns:1fr 1fr;}
+  .plan-allures{grid-template-columns:1fr 1fr;}
+  .ressenti-grid{grid-template-columns:repeat(3,1fr);}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div style="width:42px;height:42px;background:rgba(255,255,255,.15);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;">♀️</div>
+  <div>
+    <div class="header-title">Plan Norvégien — Femme</div>
+    <div class="header-sub">Cycle · Performance · 12 semaines · Seb Run Nature</div>
+  </div>
+  <div class="header-badge">🏔️ Bakken · v3 · Cycle &amp; Profil</div>
+</div>
+
+<div class="wrap">
+
+<!-- ZONES -->
+<div class="card">
+  <div class="card-title">🎯 Les 4 zones d&apos;intensité</div>
+  <div class="zones-legend">
+    <div class="zone-pill z-ef">🟢 EF — Tu parles normalement</div>
+    <div class="zone-pill z-s1">🟡 Seuil 1 — Quelques mots seulement</div>
+    <div class="zone-pill z-s2">🟠 Seuil 2 — 2-3 mots max</div>
+    <div class="zone-pill z-max">🔴 Au-delà — Impossible de parler</div>
+  </div>
+  <div class="alerte alerte-info">
+    <span>💡</span>
+    <span>La méthode norvégienne repose sur 80% du volume en EF et 20% en seuil. <strong>Les jours verts doivent être vraiment verts.</strong> Pour les femmes : volume adapté ×0.92, renforcement obligatoire, intensité ajustée selon la phase du cycle.</span>
+  </div>
+</div>
+
+<!-- PROFIL -->
+<div class="card">
+  <div class="card-title">👤 Ton profil</div>
+  <div class="form-grid">
+    <div class="form-group">
+      <label>Catégorie d'âge</label>
+      <select id="catAge">
+        <option value="SE">SE — Senior (moins de 35 ans)</option>
+        <option value="W35">W35 (35–39 ans)</option>
+        <option value="W40">W40 (40–44 ans)</option>
+        <option value="W45">W45 (45–49 ans)</option>
+        <option value="W50">W50 (50–54 ans)</option>
+        <option value="W55">W55 (55–59 ans)</option>
+        <option value="W60">W60 (60–64 ans)</option>
+        <option value="W65">W65+ (65 ans et plus)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Niveau actuel</label>
+      <select id="niveau">
+        <option value="debutant">Débutante — je cours depuis moins de 1 an</option>
+        <option value="intermediaire" selected>Intermédiaire — je cours régulièrement</option>
+        <option value="avance">Avancée — compétitions régulières</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Objectif course</label>
+      <select id="objectif">
+        <option value="5">5 km</option>
+        <option value="10" selected>10 km</option>
+        <option value="15">15 km</option>
+        <option value="21">Semi-marathon 21 km</option>
+        <option value="42">Marathon 42 km</option>
+        <option value="50">Ultra 50 km</option>
+        <option value="55">Ultra 55 km</option>
+        <option value="60">Ultra 60 km</option>
+        <option value="65">Ultra 65 km</option>
+        <option value="70">Ultra 70 km</option>
+        <option value="75">Ultra 75 km</option>
+        <option value="80">Ultra 80 km</option>
+        <option value="85">Ultra 85 km</option>
+        <option value="90">Ultra 90 km</option>
+        <option value="95">Ultra 95 km</option>
+        <option value="100">Ultra 100 km</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Type de terrain</label>
+      <select id="terrain">
+        <option value="route">🏙️ Route / Piste</option>
+        <option value="trail">🌲 Trail mixte</option>
+        <option value="ultra">⛰️ Ultra trail D+</option>
+      </select>
+    </div>
+    <div class="form-group" id="dplusGroup" style="display:none;">
+      <label>D+ objectif (m)</label>
+      <input type="number" id="dplusCourse" placeholder="Ex: 2162" min="0" max="10000" step="50">
+    </div>
+    <div class="form-group">
+      <label>Nom de la compétition</label>
+      <input type="text" id="nomCourse" placeholder="Ex: Trail Uewersauer 2026">
+    </div>
+    <div class="form-group">
+      <label>Date de la compétition</label>
+      <input type="date" id="dateCourse">
+    </div>
+    <div class="form-group">
+      <label>FC repos habituelle (bpm) <span style="font-weight:400;text-transform:none;">(optionnel)</span></label>
+      <input type="number" id="fcRepos" placeholder="Ex: 48" min="30" max="90">
+      <small>Utilisée pour ajuster les alertes en phase lutéale (+5-10 bpm)</small>
+    </div>
+  </div>
+</div>
+
+<!-- CYCLE MENSTRUEL -->
+<!-- ══ PROFIL HORMONAL ══ -->
+<div class="profil-section">
+  <div class="profil-title">💊 Ton profil hormonal</div>
+  <div class="profil-sub">Ce choix adapte ton plan à ta réalité hormonale. Aucune option n&apos;est meilleure que l&apos;autre — elles sont juste différentes.</div>
+
+  <div class="chemin-toggle">
+    <button type="button" class="chemin-btn active" id="modeNaturel" onclick="setProfilHormonal('naturel')">
+      <span class="cb-icon">🌿</span>
+      <span class="cb-label">Cycle naturel</span>
+      <span class="cb-sub">Hormones qui varient chaque mois</span>
+    </button>
+    <button type="button" class="chemin-btn" id="modePilule" onclick="setProfilHormonal('pilule')">
+      <span class="cb-icon">💊</span>
+      <span class="cb-label">Pilule / Stable</span>
+      <span class="cb-sub">Hormones constantes artificiellement</span>
+    </button>
+  </div>
+
+  <!-- Explication dynamique -->
+  <div id="profilExpli" class="alerte alerte-info" style="margin-top:12px;">
+    <span>🌿</span>
+    <span><strong>Cycle naturel :</strong> Tes hormones varient au fil du mois — et c&apos;est une vraie force ! Ton plan exploite ces variations : plus d'intensité quand tu es au top de ta forme, plus de récupération quand ton corps en a besoin.</span>
+  </div>
+
+  <div class="pilule-banner" id="piluleBanner">
+    💊 <strong>Mode pilule activé :</strong> Ton plan reste identique toute l&apos;année, sans tenir compte des phases du cycle. Les séances ne sont pas ajustées selon les jours du mois — tu as une régularité totale.
+  </div>
+
+  <!-- Graphique interactif du cycle -->
+  <div class="cycle-graph-wrap" id="graphWrap">
+    <div style="font-size:.72rem;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">Ton énergie au fil du cycle</div>
+    <div style="position:relative;">
+      <div class="cycle-tooltip" id="cycleTooltip"></div>
+      <svg class="cycle-graph-svg" id="cycleGraphSvg" viewBox="0 0 400 80" preserveAspectRatio="none">
+        <!-- Zones colorées en fond -->
+        <rect x="0" y="0" width="70" height="80" fill="#fee2e2" opacity="0.4" rx="0"/>
+        <rect x="70" y="0" width="136" height="80" fill="#dcfce7" opacity="0.4" rx="0"/>
+        <rect x="206" y="0" width="14" height="80" fill="#fef9c3" opacity="0.4" rx="0"/>
+        <rect x="220" y="0" width="180" height="80" fill="#ede9fe" opacity="0.4" rx="0"/>
+        <!-- Courbe naturelle -->
+        <path id="curveNaturel"
+          d="M0,65 C20,62 40,58 70,55 S110,30 140,18 S170,22 206,35 S240,68 280,72 S340,70 400,68"
+          fill="none" stroke="var(--rose)" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Ligne pilule (cachée par défaut) -->
+        <line id="linePilule" x1="0" y1="45" x2="400" y2="45"
+          stroke="#378ADD" stroke-width="2.5" stroke-dasharray="8,4" opacity="0"/>
+        <!-- Points interactifs -->
+        <circle class="graph-dot" cx="35"  cy="60" r="5" fill="#E24B4A" data-phase="regles"   data-j="J3"  data-info="Règles · Énergie souvent basse · Écoute ton corps"/>
+        <circle class="graph-dot" cx="105" cy="35" r="5" fill="#1D9E75" data-phase="follic"   data-j="J8"  data-info="Folliculaire · Énergie montante · Idéal pour l&apos;intensité"/>
+        <circle class="graph-dot" cx="155" cy="16" r="6" fill="#EF9F27" data-phase="ovulation" data-j="J14" data-info="Ovulation · Pic d&apos;énergie ! Attention ligaments"/>
+        <circle class="graph-dot" cx="310" cy="70" r="5" fill="#7c3aed" data-phase="luteal"   data-j="J22" data-info="Lutéale · Fatigue progressive · EF et récupération"/>
+      </svg>
+    </div>
+    <div class="cycle-graph-days">
+      <span>J1 Règles</span>
+      <span>J7</span>
+      <span>J14 Ovulation</span>
+      <span>J21</span>
+      <span>J28-29</span>
+    </div>
+    <div id="graphInfo" style="margin-top:10px;font-size:.78rem;color:var(--mut);min-height:18px;text-align:center;font-style:italic;">
+      Passe ta souris sur les points pour en savoir plus
+    </div>
+  </div>
+
+  <!-- Explication pédagogique des phases -->
+  <div id="cycleExplainer" class="cycle-explainer">
+    <div style="font-size:.72rem;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;">Ce qui se passe dans ton corps</div>
+
+    <div class="phase-explainer">
+      <div class="phase-dot" style="background:#fee2e2;">🔴</div>
+      <div>
+        <div class="phase-explainer-title">J1 à J5 — Les règles</div>
+        <div class="phase-explainer-body">Ton utérus se vide, les hormones sont au plus bas. Tu peux te sentir fatiguée, avoir des crampes. C&apos;est totalement normal — ton corps travaille dur. Certaines femmes courent très bien pendant leurs règles, d&apos;autres non. Écoute ton corps avant tout.</div>
+        <span class="phase-explainer-tip tip-red">Plan adapté : EF léger — intensité réduite ou repos si douleurs</span>
+      </div>
+    </div>
+
+    <div class="phase-explainer">
+      <div class="phase-dot" style="background:#dcfce7;">🟢</div>
+      <div>
+        <div class="phase-explainer-title">J6 à J13 — Phase folliculaire</div>
+        <div class="phase-explainer-body">Les œstrogènes montent progressivement. Tu te sens de mieux en mieux, l'énergie revient, la motivation aussi. C&apos;est la meilleure période pour les séances difficiles — ton corps récupère vite et tolère bien l&apos;effort intense.</div>
+        <span class="phase-explainer-tip tip-green">Plan adapté : Intensité autorisée — profite de cette fenêtre !</span>
+      </div>
+    </div>
+
+    <div class="phase-explainer">
+      <div class="phase-dot" style="background:#fef9c3;">🟡</div>
+      <div>
+        <div class="phase-explainer-title">J14 — Ovulation (1 jour)</div>
+        <div class="phase-explainer-body">C&apos;est ton pic hormonal — pic d&apos;énergie, de force et de motivation. Tu peux te sentir invincible ! Mais attention : les hormones rendent tes ligaments légèrement plus souples ce jour-là, ce qui augmente le risque de blessure (cheville, genou). Échauffe-toi bien et évite les côtes explosives.</div>
+        <span class="phase-explainer-tip tip-yellow">Plan adapté : Séance qualité possible — mais échauffement long obligatoire</span>
+      </div>
+    </div>
+
+    <div class="phase-explainer">
+      <div class="phase-dot" style="background:#ede9fe;">🟣</div>
+      <div>
+        <div class="phase-explainer-title">J15 à J29 — Phase lutéale</div>
+        <div class="phase-explainer-body">La progestérone prend le dessus. Ta température corporelle monte légèrement (+0.3°C), ton cœur bat plus vite pour le même effort, et tu fatigues plus vite. Ce n&apos;est pas dans ta tête — c&apos;est de la biologie ! Tes allures habituelles seront plus dures à tenir. C'est normal. Le plan ajuste automatiquement tes zones cibles.</div>
+        <span class="phase-explainer-tip tip-violet">Plan adapté : Allures +10 sec/km — EF dominant — récupération prioritaire</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cycle-section">
+  <div class="cycle-title">♀️ Ton cycle menstruel</div>
+  <div class="cycle-info">
+    Chaque femme est différente. Entre tes données réelles — le dashboard calcule automatiquement tes phases et adapte ton plan. Si ton cycle est irrégulier, tu pourras mettre à jour le J1 à chaque nouveau cycle.
+  </div>
+  <div class="form-grid">
+    <div class="form-group">
+      <label>Durée de ton cycle (jours)</label>
+      <input type="number" id="cycleDuration" value="29" min="15" max="45">
+      <small>Moyenne : 29 jours · Plage normale : 21-35 jours</small>
+    </div>
+    <div class="form-group">
+      <label>Durée de tes règles (jours)</label>
+      <input type="number" id="periodDuration" value="5" min="1" max="10">
+      <small>Moyenne : 5 jours · Plage : 3-7 jours</small>
+    </div>
+    <div class="form-group full">
+      <label>Date de début de ton dernier cycle (J1)</label>
+      <input type="date" id="lastJ1">
+      <small>J1 = premier jour de tes règles</small>
+    </div>
+  </div>
+  <div id="cycleAlerte"></div>
+  <div id="cyclePreview" style="display:none;">
+    <div style="font-size:.78rem;font-weight:700;color:var(--rose-dk);margin:14px 0 8px;text-transform:uppercase;letter-spacing:.5px;">Tes phases calculées</div>
+    <div class="cycle-phases-preview" id="phasesGrid"></div>
+    <div style="margin-top:10px;font-size:.75rem;color:var(--mut);">💡 Formule : Ovulation = Durée cycle - 14 jours (la phase lutéale dure toujours ~14 jours)</div>
+  </div>
+</div>
+
+<!-- PERFORMANCE -->
+<div class="card">
+  <div class="card-title">⚡ Ta référence de performance</div>
+  <div class="chemin-toggle">
+    <button class="chemin-btn active" onclick="setChemin('chrono')" id="btnChrono">
+      <span class="cb-icon">⏱️</span>
+      <span class="cb-label">J'ai un chrono</span>
+      <span class="cb-sub">5k ou 10k récent</span>
+    </button>
+    <button class="chemin-btn" onclick="setChemin('test')" id="btnTest">
+      <span class="cb-icon">🏃</span>
+      <span class="cb-label">Pas de chrono</span>
+      <span class="cb-sub">Test 20 minutes</span>
+    </button>
+  </div>
+  <div class="chemin-section show" id="sectionChrono">
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Distance de référence</label>
+        <select id="distRef">
+          <option value="5">5 km</option>
+          <option value="10" selected>10 km</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Ton chrono (mm:ss)</label>
+        <input type="text" id="chrono" placeholder="Ex: 48:30">
+      </div>
+    </div>
+  </div>
+  <div class="chemin-section" id="sectionTest">
+    <div class="test-box">
+      <h4>🏃 Test 20 minutes — ton seuil 2</h4>
+      <ol class="test-steps">
+        <li>Échauffe-toi 10 minutes en marchant ou trottinant</li>
+        <li>Lance ton chrono et cours 20 minutes à une allure où tu ne peux dire que 2-3 mots</li>
+        <li>Note la distance parcourue exactement</li>
+        <li>Entre-la ci-dessous</li>
+      </ol>
+    </div>
+    <div class="form-group">
+      <label>Distance en 20 min (km)</label>
+      <input type="number" id="distTest" placeholder="Ex: 3.6" step="0.1" min="1" max="8">
+    </div>
+  </div>
+</div>
+
+<button class="btn-gen" onclick="genererPlan()">♀️ GÉNÉRER MON PLAN 12 SEMAINES</button>
+
+<!-- OUTPUT -->
+<div id="planOutput">
+
+  <div class="plan-header" id="planHeader"></div>
+
+  <div class="actions-bar">
+    <button class="btn-action btn-save" onclick="sauvegarder()">💾 Sauvegarder</button>
+    <button class="btn-action btn-export" onclick="exporterJSON()">📤 Exporter</button>
+    <button class="btn-action btn-import" onclick="document.getElementById('importFile').click()">📥 Importer</button>
+    <button class="btn-action" style="background:#fff;color:var(--rose-dk);border:1.5px solid var(--rose);" onclick="ouvrirCycleModal()">♀️ Mettre à jour J1</button>
+    <button class="btn-action btn-reset" onclick="resetPlan()">🗑 Effacer</button>
+    <input type="file" id="importFile" accept=".json" style="display:none" onchange="importerJSON(event)">
+  </div>
+
+  <!-- Indicateur phase actuelle -->
+  <div class="cycle-indicator" id="cycleIndicator" style="display:none;">
+    <div class="ci-phase">
+      <div class="ci-phase-name" id="ciPhaseName">Phase folliculaire</div>
+      <div class="ci-phase-sub" id="ciphaSub">Jour X du cycle · Intensité optimale</div>
+    </div>
+    <div id="ciAlerte"></div>
+  </div>
+
+  <div class="card" style="margin-top:16px;">
+    <div class="week-nav">
+      <button class="week-nav-btn" id="btnPrev" onclick="changerSemaine(-1)">← Précédente</button>
+      <div class="week-info">
+        <div class="week-num" id="weekNum">Semaine 1 / 12</div>
+        <div class="week-dates" id="weekDates" style="font-size:.72rem;color:var(--mut);font-weight:600;margin-top:2px;"></div>
+        <div class="week-phase" id="weekPhase">Construction</div>
+      </div>
+      <button class="week-nav-btn" id="btnNext" onclick="changerSemaine(1)">Suivante →</button>
+    </div>
+    <div class="week-progress"><div class="week-progress-fill" id="weekProgressFill"></div></div>
+    <div id="weekCycleInfo" style="margin-bottom:14px;display:none;"></div>
+    <div class="week-grid" id="weekGrid"></div>
+    <div id="weekSummary" style="display:none;"><div class="week-summary"><div class="ws-title">Resume de la semaine</div><div class="ws-bar-wrap"><div class="ws-bar" id="wsSumBar" style="width:0%"></div></div><div class="ws-stats"><div class="ws-pct" id="wsSumPct">0%</div><div class="ws-detail" id="wsSumDetail">0 seance effectuee</div></div><div class="ws-msg" id="wsSumMsg"></div><div class="warn-local">Les coches sont sauvegardees dans ce navigateur uniquement. Elles ne se synchronisent pas entre appareils.</div></div><div style="display:flex;justify-content:flex-end;margin-top:10px;"><button class="btn-print-week" onclick="imprimerSemaine()">Imprimer cette semaine</button></div></div>
+  </div>
+
+  <!-- Tracker ressenti (journal) -->
+  <div class="card">
+    <div class="card-title">📓 Journal de ressenti — aujourd&apos;hui</div>
+    <div style="font-size:.82rem;color:var(--mut);margin-bottom:12px;">Note ton ressenti quotidien — le dashboard mémorise tes patterns sur plusieurs cycles.</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Date</label>
+        <input type="date" id="journalDate">
+      </div>
+      <div class="form-group">
+        <label>Énergie générale</label>
+        <div class="ressenti-grid" id="energieGrid">
+          <button class="ressenti-btn" onclick="selRessenti('energie',1,this)">😴 1</button>
+          <button class="ressenti-btn" onclick="selRessenti('energie',2,this)">😔 2</button>
+          <button class="ressenti-btn" onclick="selRessenti('energie',3,this)">😐 3</button>
+          <button class="ressenti-btn" onclick="selRessenti('energie',4,this)">🙂 4</button>
+          <button class="ressenti-btn" onclick="selRessenti('energie',5,this)">💪 5</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Douleurs / Crampes</label>
+        <div style="display:flex;gap:8px;margin-top:4px;">
+          <button class="ressenti-btn" id="btn-douleur-non" onclick="selDouleur(false)" style="flex:1;">✅ Non</button>
+          <button class="ressenti-btn" id="btn-douleur-oui" onclick="selDouleur(true)" style="flex:1;">⚠️ Oui</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Note libre</label>
+        <input type="text" id="journalNote" placeholder="Ex: jambes lourdes, bonne séance...">
+      </div>
+    </div>
+    <button onclick="sauvegarderJournal()" style="margin-top:12px;padding:10px 20px;background:var(--rose);color:#fff;border:none;border-radius:9px;font-family:'Nunito',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;">💾 Enregistrer le ressenti</button>
+    <div id="journalHistory" style="margin-top:16px;"></div>
+  </div>
+
+</div>
+</div>
+
+<!-- MODAL CYCLE UPDATE -->
+<div class="modal-overlay" id="cycleModal" onclick="closeCycleIfOverlay(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="fermerCycleModal()">✕</button>
+    <div class="modal-title">♀️ Mettre à jour ton cycle</div>
+    <div class="form-group" style="margin-bottom:14px;">
+      <label>Date de début du nouveau cycle (J1)</label>
+      <input type="date" id="newJ1">
+    </div>
+    <div class="form-group" style="margin-bottom:14px;">
+      <label>Durée de ce cycle (si différente)</label>
+      <input type="number" id="newCycleDuration" placeholder="Laisser vide si identique">
+    </div>
+    <div id="modalCycleAlerte" style="margin-bottom:14px;"></div>
+    <button onclick="mettreAJourCycle()" style="width:100%;padding:12px;background:var(--rose);color:#fff;border:none;border-radius:10px;font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:1px;cursor:pointer;">METTRE À JOUR</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="footer">
+  ♀️ Conçu avec passion par <a href="https://www.seb-run-nature.com" target="_blank" rel="noopener">Seb Run Nature</a>
+  &nbsp;·&nbsp; Données privées stockées localement sur ton appareil
+  &nbsp;·&nbsp; Zéro cloud · Zéro inscription
+  &nbsp;·&nbsp; <span id="footerYear"></span>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════════
+// ÉTAT GLOBAL
+// ══════════════════════════════════════════════════════════
+let currentWeek = 0;
+let planData = null;
+let cheminActif = 'chrono';
+let ressentiData = {};
+let selectedEnergie = 0;
+let selectedDouleur = null;
+let profilHormonal = 'naturel'; // 'naturel' ou 'pilule'
+
+// ── PROFIL HORMONAL ──────────────────────────────────────
+function setProfilHormonal(mode) {
+  profilHormonal = mode;
+  document.getElementById('modeNaturel').classList.toggle('active', mode === 'naturel');
+  document.getElementById('modePilule').classList.toggle('active', mode === 'pilule');
+
+  const expli = document.getElementById('profilExpli');
+  const banner = document.getElementById('piluleBanner');
+  const graphWrap = document.getElementById('graphWrap');
+  const explainer = document.getElementById('cycleExplainer');
+  const curveNaturel = document.getElementById('curveNaturel');
+  const linePilule = document.getElementById('linePilule');
+  const dots = document.querySelectorAll('.graph-dot');
+
+  if (mode === 'naturel') {
+    expli.className = 'alerte alerte-info';
+    expli.innerHTML = `<span>🌿</span><span><strong>Cycle naturel :</strong> Tes hormones varient au fil du mois — et c&apos;est une vraie force ! Ton plan exploite ces variations : plus d'intensité quand tu es au top de ta forme, plus de récupération quand ton corps en a besoin.</span>`;
+    banner.classList.remove('show');
+    curveNaturel.style.opacity = '1';
+    linePilule.style.opacity = '0';
+    dots.forEach(d => d.style.opacity = '1');
+    explainer.style.display = 'block';
+  } else {
+    expli.className = 'alerte alerte-violet';
+    expli.innerHTML = `<span>💊</span><span><strong>Mode pilule / stable :</strong> Tes hormones sont constantes grâce à la contraception. Ton plan est identique toute l'année — pas d'ajustement selon les jours. Régularité totale, prévisibilité maximale.</span>`;
+    banner.classList.add('show');
+    curveNaturel.style.opacity = '0.15';
+    linePilule.style.opacity = '1';
+    dots.forEach(d => d.style.opacity = '0.2');
+    explainer.style.display = 'none';
+  }
+}
+
+// ── GRAPHIQUE INTERACTIF ─────────────────────────────────
+function initGraphDots() {
+  const dots = document.querySelectorAll('.graph-dot');
+  const info = document.getElementById('graphInfo');
+  const tooltip = document.getElementById('cycleTooltip');
+  const svgEl = document.getElementById('cycleGraphSvg');
+
+  const phaseColors = {
+    regles:'#E24B4A', follic:'#1D9E75', ovulation:'#EF9F27', luteal:'#7c3aed'
+  };
+
+  dots.forEach(dot => {
+    dot.style.cursor = 'pointer';
+    dot.style.transition = 'r 0.2s';
+
+    dot.addEventListener('mouseenter', function(e) {
+      if (profilHormonal === 'pilule') return;
+      const phase = this.dataset.phase;
+      const j     = this.dataset.j;
+      const inf   = this.dataset.info;
+      info.textContent = inf;
+      info.style.color = phaseColors[phase];
+      this.setAttribute('r', '7');
+    });
+
+    dot.addEventListener('mouseleave', function() {
+      const origR = this.dataset.phase === 'ovulation' ? '6' : '5';
+      this.setAttribute('r', origR);
+      info.textContent = 'Passe ta souris sur les points pour en savoir plus';
+      info.style.color = '';
+    });
+
+    dot.addEventListener('click', function() {
+      if (profilHormonal === 'pilule') return;
+      const phase = this.dataset.phase;
+      const j     = this.dataset.j;
+      const inf   = this.dataset.info;
+      showToast(`${j} — ${inf}`);
+    });
+  });
+}
+
+// ── BOOST PERFORMANCE (mode naturel) ────────────────────
+function getBoostFactor(jourCycle) {
+  // Pic œstrogènes J10-J14 → +5% intensité (allure plus vite)
+  if (jourCycle >= 10 && jourCycle <= 14) return 0.95; // facteur multiplicateur sur sec/km
+  // Phase lutéale J16+ → +10 sec/km (plus dur)
+  if (jourCycle >= 16) return 1.07;
+  // Règles J1-5 → légèrement réduit
+  if (jourCycle <= 5) return 1.04;
+  // Folliculaire J6-9 → optimal
+  return 1.0;
+}
+
+// ══════════════════════════════════════════════════════════
+// CYCLE — CALCUL DES PHASES
+// ══════════════════════════════════════════════════════════
+function calcCyclePhases(j1Date, cycleDuration, periodDuration) {
+  const j1 = new Date(j1Date);
+  // Phase lutéale toujours ~14 jours
+  const jourOvulation = cycleDuration - 14;
+  const finCycle = new Date(j1);
+  finCycle.setDate(j1.getDate() + cycleDuration - 1);
+
+  return {
+    j1,
+    cycleDuration,
+    periodDuration,
+    jourOvulation,
+    // Phases en jours relatifs depuis J1 (1-indexed)
+    phases: {
+      regles:   {debut:1,            fin:periodDuration},
+      follic:   {debut:periodDuration+1, fin:jourOvulation-1},
+      ovulation:{debut:jourOvulation, fin:jourOvulation},
+      luteal:   {debut:jourOvulation+1, fin:cycleDuration},
+    }
+  };
+}
+
+function getPhaseForDay(jourCycle, cycleInfo) {
+  const p = cycleInfo.phases;
+  if (jourCycle >= p.regles.debut   && jourCycle <= p.regles.fin)    return 'regles';
+  if (jourCycle >= p.follic.debut   && jourCycle <= p.follic.fin)    return 'follic';
+  if (jourCycle >= p.ovulation.debut&& jourCycle <= p.ovulation.fin) return 'ovulation';
+  if (jourCycle >= p.luteal.debut   && jourCycle <= p.luteal.fin)    return 'luteal';
+  return 'follic';
+}
+
+function jourCycleActuel(j1Date, cycleDuration) {
+  const j1 = new Date(j1Date);
+  const today = new Date();
+  today.setHours(0,0,0,0); j1.setHours(0,0,0,0);
+  let diff = Math.floor((today - j1) / 86400000);
+  // Gérer les cycles passés
+  while (diff >= cycleDuration) diff -= cycleDuration;
+  while (diff < 0) diff += cycleDuration;
+  return diff + 1; // 1-indexed
+}
+
+function phaseLabel(phase) {
+  const labels = {
+    regles:   {nom:'🔴 Règles', sub:'Inflammation haute — EF privilégié', cls:'ph-regles'},
+    follic:   {nom:'🟢 Folliculaire', sub:'Optimal — meilleure tolérance lactate', cls:'ph-follic'},
+    ovulation:{nom:'🟡 Ovulation', sub:'⚠️ Vigilance ligamentaire — éviter les côtes explosives', cls:'ph-ovul'},
+    luteal:   {nom:'🟣 Lutéale', sub:'FC +5-10 bpm — EF dominant, intensité réduite', cls:'ph-luteal'},
+  };
+  return labels[phase] || labels.follic;
+}
+
+// Vérifier si le cycle est irrégulier
+function checkCycleAlertes(cycleDuration) {
+  const el = document.getElementById('cycleAlerte');
+  if (!el) return;
+  if (cycleDuration < 21 || cycleDuration > 35) {
+    el.innerHTML = `<div class="alerte alerte-danger">⚠️ Cycle irrégulier détecté (${cycleDuration} jours). Consulte un médecin du sport — risque RED-S possible (déséquilibre énergétique).</div>`;
+  } else if (cycleDuration < 24) {
+    el.innerHTML = `<div class="alerte alerte-warning">ℹ️ Cycle court (${cycleDuration} jours) — les phases seront plus compressées.</div>`;
+  } else {
+    el.innerHTML = '';
+  }
+}
+
+// Preview des phases dans le formulaire
+function updateCyclePreview() {
+  const dur = parseInt(document.getElementById('cycleDuration').value) || 29;
+  const per = parseInt(document.getElementById('periodDuration').value) || 5;
+  const j1  = document.getElementById('lastJ1').value;
+
+  checkCycleAlertes(dur);
+
+  const preview = document.getElementById('cyclePreview');
+  const grid = document.getElementById('phasesGrid');
+  if (!grid) return;
+
+  const ci = calcCyclePhases(j1 || new Date().toISOString().slice(0,10), dur, per);
+  const p = ci.phases;
+
+  preview.style.display = 'block';
+  grid.innerHTML = `
+    <div class="phase-pill ph-regles">
+      <span class="pp-icon">🔴</span>
+      <span class="pp-name">Règles</span>
+      <span class="pp-days">J${p.regles.debut} → J${p.regles.fin}</span>
+    </div>
+    <div class="phase-pill ph-follic">
+      <span class="pp-icon">🟢</span>
+      <span class="pp-name">Folliculaire</span>
+      <span class="pp-days">J${p.follic.debut} → J${p.follic.fin}</span>
+    </div>
+    <div class="phase-pill ph-ovul">
+      <span class="pp-icon">🟡</span>
+      <span class="pp-name">Ovulation</span>
+      <span class="pp-days">J${p.ovulation.debut}</span>
+    </div>
+    <div class="phase-pill ph-luteal">
+      <span class="pp-icon">🟣</span>
+      <span class="pp-name">Lutéale</span>
+      <span class="pp-days">J${p.luteal.debut} → J${p.luteal.fin}</span>
+    </div>
+  `;
+}
+
+// ══════════════════════════════════════════════════════════
+// CALCUL ALLURES
+// ══════════════════════════════════════════════════════════
+function parseTime(str) {
+  const p = str.trim().split(':').map(Number);
+  if (p.length === 2) return p[0]*60 + p[1];
+  if (p.length === 3) return p[0]*3600 + p[1]*60 + p[2];
+  return 0;
+}
+function secToMin(sec) {
+  const m = Math.floor(sec/60), s = Math.round(sec%60);
+  return `${m}'${String(s).padStart(2,'0')}"`;
+}
+function calcAllures(profil) {
+  let s2Sec;
+  if (cheminActif === 'chrono') {
+    const dist = parseInt(document.getElementById('distRef').value);
+    const ch = document.getElementById('chrono').value;
+    if (!ch) return null;
+    const tot = parseTime(ch);
+    const allureRace = tot / dist;
+    const offset = dist === 5 ? 12 : 25;
+    s2Sec = allureRace + offset;
+  } else {
+    const dist = parseFloat(document.getElementById('distTest').value);
+    if (!dist) return null;
+    s2Sec = 1200 / dist;
+  }
+  // Facteur âge
+  const af = {SE:1.0,W35:1.0,W40:1.03,W45:1.05,W50:1.08,W55:1.11,W60:1.15,W65:1.20}[profil.cat] || 1.0;
+  s2Sec *= af;
+  // Femme : allures légèrement plus hautes (tolérance au lactate différente)
+  s2Sec *= 1.01;
+  const s1Sec = s2Sec + 35;
+  const efSec = s1Sec + 52; // légèrement plus large pour les femmes
+  const maxSec = Math.max(s2Sec - 18, 120);
+  return {
+    ef:secToMin(efSec), s1:secToMin(s1Sec), s2:secToMin(s2Sec), max:secToMin(maxSec),
+    // Phase lutéale : allures ajustées +5bpm ≈ +8-12 sec/km
+    efLuteal:secToMin(efSec+10), s1Luteal:secToMin(s1Sec+10), s2Luteal:secToMin(s2Sec+10)
+  };
+}
+
+// ══════════════════════════════════════════════════════════
+// VOLUME & PHASES PLAN
+// ══════════════════════════════════════════════════════════
+function getVolumeFactor(w, niveau) {
+  const base = {debutant:0.55, intermediaire:0.92, avance:1.25}; // ×0.92 femme intégré dans la base
+  const prog = [0.7,0.8,0.9,1.0,1.05,1.1,1.15,1.1,1.0,0.75,0.55,0.25];
+  return (base[niveau]||0.92) * (prog[w]||1.0);
+}
+
+function getPlanPhase(w) {
+  if (w<3)  return {nom:'Construction', icon:'🌱', desc:'Adaptation progressive'};
+  if (w<6)  return {nom:'Développement', icon:'📈', desc:'Seuil 1 dominant'};
+  if (w<9)  return {nom:'Spécifique', icon:'⚡', desc:'Double seuil — volume max'};
+  if (w===9) return {nom:'Affûtage', icon:'🔪', desc:'Volume -30%'};
+  if (w===10) return {nom:'Réduction', icon:'😴', desc:'Volume -50%'};
+  return {nom:'Semaine de course', icon:'🏁', desc:'Très léger + compétition'};
+}
+
+// ══════════════════════════════════════════════════════════
+// ADAPTER SÉANCE SELON PHASE CYCLE
+// ══════════════════════════════════════════════════════════
+function adapterSeanceAuCycle(session, phase, allures, jourCycle) {
+  // Mode pilule : aucune adaptation
+  if (profilHormonal === 'pilule') return session;
+  if (!phase) return session;
+  const s = Object.assign({}, session);
+
+  if (phase === 'regles') {
+    if (s.z === 's2' || s.z === 'max') {
+      s.z = 'ef';
+      s.t = '🔴 ' + s.t + ' → EF (règles)';
+      s.d = `Remplacé par EF — allure ${allures.ef} · Écoute ton corps, réduis si douleurs`;
+    } else if (s.z === 's1') {
+      s.d += ` · ⚠️ Phase règles — réduire si douleurs`;
+    }
+  } else if (phase === 'follic') {
+    // Boost folliculaire J10-J14 : mention performance optimale
+    if (jourCycle >= 10 && jourCycle <= 14 && (s.z === 's1' || s.z === 's2')) {
+      s.d += ` · 🟢 Pic œstrogènes — fenêtre de performance optimale !`;
+    }
+  } else if (phase === 'ovulation') {
+    if (s.z === 'max') {
+      s.d += ` · ⚠️ Ovulation — vigilance ligamentaire, échauffement 15 min obligatoire`;
+    }
+    if (s.z === 's1' || s.z === 's2') {
+      s.d += ` · 🟡 Ovulation — pic d'énergie mais attention aux ligaments`;
+    }
+  } else if (phase === 'luteal') {
+    if (s.z === 's1') s.d = s.d.replace(allures.s1, allures.s1Luteal) + ` · 🟣 Lutéale — allure ajustée (+10 sec/km)`;
+    if (s.z === 's2') s.d = s.d.replace(allures.s2, allures.s2Luteal) + ` · 🟣 FC +5-10 bpm attendu`;
+    if (s.z === 'max') {
+      s.z = 's2';
+      s.t = s.t + ' → Seuil 2 (phase lutéale)';
+      s.d = `Côtes → seuil 2 — allure ${allures.s2Luteal} · FC plus haute que d'habitude, c'est normal`;
+    }
+  }
+  return s;
+}
+
+// ══════════════════════════════════════════════════════════
+// DATES & REPOS PAR ÂGE — FEMME
+// ══════════════════════════════════════════════════════════
+
+function getStartDate(dateCourse) {
+  if (!dateCourse) return null;
+  const d = new Date(dateCourse);
+  const dow = d.getDay();
+  const diffToDim = dow === 0 ? 0 : 7 - dow;
+  d.setDate(d.getDate() + diffToDim);
+  d.setDate(d.getDate() - 83);
+  return d;
+}
+
+function getWeekDates(startDate, weekIndex) {
+  if (!startDate) return null;
+  const lundi = new Date(startDate);
+  lundi.setDate(lundi.getDate() + weekIndex * 7);
+  const dim = new Date(lundi);
+  dim.setDate(dim.getDate() + 6);
+  const opts = {day:'numeric', month:'long'};
+  const label = lundi.toLocaleDateString('fr-FR', opts) + ' → ' + dim.toLocaleDateString('fr-FR', opts);
+  return {lundi, dim, label};
+}
+
+function getDayDate(startDate, weekIndex, dayIndex) {
+  if (!startDate) return '';
+  const d = new Date(startDate);
+  d.setDate(d.getDate() + weekIndex * 7 + dayIndex);
+  return d.toLocaleDateString('fr-FR', {day:'numeric', month:'long'});
+}
+
+// Repos par âge — femme
+// W55+ : ménopause = récupération ralentie significativement
+function getNbReposFemme(cat) {
+  if (['W60','W65'].includes(cat)) return 3;
+  if (['W50','W55'].includes(cat)) return 2;
+  return 1;
+}
+
+// Sémaines de décharge — uniquement W55+ car le cycle gère déjà l'allègement pour les plus jeunes
+function getDechargeWeeksFemme(cat) {
+  if (['W60','W65'].includes(cat)) return [2,4,6,8,10];
+  if (['W50','W55'].includes(cat)) return [2,5,8];
+  return []; // W35/W40/W45 : le cycle gère déjà
+}
+
+function injecterReposFemme(jours, cat, w) {
+  const nb = getNbReposFemme(cat);
+  if (nb >= 2) {
+    const lundiIdx = jours.findIndex(j => j.j === 'Lundi');
+    if (lundiIdx !== -1 && jours[lundiIdx].m && jours[lundiIdx].m.z !== 'repos') {
+      jours[lundiIdx] = {
+        j: 'Lundi',
+        m: {t:'REPOS actif', d:'Marche 30 min — récupération post-ménopause recommandée', z:'repos'},
+        s: null
+      };
+    }
+  }
+  if (nb >= 3) {
+    const merIdx = jours.findIndex(j => j.j === 'Mercredi');
+    if (merIdx !== -1 && jours[merIdx].m && jours[merIdx].m.z !== 'repos') {
+      jours[merIdx] = {
+        j: 'Mercredi',
+        m: {t:'REPOS complet', d:'48-72h entre intensités — récupération senior', z:'repos'},
+        s: null
+      };
+    }
+  }
+  return jours;
+}
+
+// ══════════════════════════════════════════════════════════
+// GÉNÉRATION SEMAINE
+// ══════════════════════════════════════════════════════════
+function genSemaine(w, profil, allures, cycleInfo) {
+  const vf   = getVolumeFactor(w, profil.niveau);
+  const dist = parseInt(profil.objectif);
+  let phase   = getPlanPhase(w);
+  const isCourse = (w === 11);
+  const isTrail = profil.terrain === 'trail';
+  const isUltra = profil.terrain === 'ultra';
+  const dplus = profil.dplusCourse || 0;
+  const dplusHebdo = dplus > 0 ? Math.round(dplus/6*vf) : 0;
+  const efBase = dist<=10?8:dist<=21?10:dist<=42?12:dist<=60?14:dist<=80?16:18;
+
+  function longDesc(km) {
+    if (isUltra && dplusHebdo>0) return `${km} km avec D+ ~${Math.round(dplusHebdo*0.6)} m`;
+    if (isTrail) return `${km} km avec dénivelé si possible`;
+    return `${km} km EF — allure ${allures.ef}`;
+  }
+  function coteDesc() {
+    if (isUltra) return `${dist<=42?'18':'12'}×200m montée sèche / 1'10"`;
+    return `${dist<=42?'18':'12'}×200m côte / 1'10" — allure ${allures.max}`;
+  }
+
+  let jours = [];
+  if (isCourse) {
+    jours = [
+      {j:'Lundi',    m:{t:'EF léger',d:`${Math.round(efBase*0.5*vf)} km`,z:'ef'},s:null},
+      {j:'Mardi',    m:{t:'Activation',d:'4×100m progressif — rester fraîche',z:'s1'},s:null},
+      {j:'Mercredi', m:{t:'Repos actif',d:'Marche ou vélo léger 30 min',z:'repos'},s:null},
+      {j:'Jeudi',    m:{t:'EF + striders',d:`${Math.round(efBase*0.4*vf)} km + 6×80m`,z:'ef'},s:null},
+      {j:'Vendredi', m:{t:'REPOS',d:'Récupération — préparation matériel',z:'repos'},s:null},
+      {j:'Samedi',   m:{t:'Très léger',d:`${Math.round(efBase*0.3*vf)} km EF`,z:'ef'},s:null},
+      {j:'Dimanche', m:{t:'🏁 COMPÉTITION',d:`${profil.nomCourse} — ${dist} km`,z:'max'},s:null},
+    ];
+  } else if (w<3) {
+    const qs = dist<=10?`4×6'/1' seuil 1`:dist<=21?`5×8'/1'30" seuil 1`:`4×10'/2' seuil 1`;
+    jours = [
+      {j:'Lundi',    m:{t:'EF matin',d:`${Math.round(efBase*vf)} km — allure ${allures.ef}`,z:'ef'},s:{t:'EF soir',d:`${Math.round(efBase*0.6*vf)} km`,z:'ef'}},
+      {j:'Mardi',    m:{t:'Seuil 1',d:`${qs} — allure ${allures.s1}`,z:'s1'},s:{t:'EF récup',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'}},
+      {j:'Mercredi', m:{t:'EF matin',d:`${Math.round(efBase*vf)} km`,z:'ef'},s:{t:'Renforcement OBLIGATOIRE',d:'Gainage, squats, fessiers, ischios — 35 min · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-bas-du-corps-pour-dominer-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Bas du corps ↗</a> · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-haut-du-corps-pour-progresser-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Haut du corps ↗</a>',z:'renfo'}},
+      {j:'Jeudi',    m:{t:'Seuil 1',d:`3×10'/2' seuil 1 — allure ${allures.s1}`,z:'s1'},s:{t:'EF récup',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'}},
+      {j:'Vendredi', m:{t:'EF léger',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'},s:null},
+      {j:'Samedi',   m:{t:'Sortie longue',d:longDesc(Math.round(efBase*1.7*vf)),z:'ef'},s:null},
+      {j:'Dimanche', m:{t:'EF récup',d:`${Math.round(efBase*1.1*vf)} km`,z:'ef'},s:{t:'Renforcement OBLIGATOIRE',d:'Squats, fessiers, mollets — 30 min · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-bas-du-corps-pour-dominer-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Programme bas du corps ↗</a>',z:'renfo'}},
+    ];
+  } else if (w<6) {
+    const s1r = dist<=10?`6×6'/1' seuil 1`:dist<=21?`5×8'/1'30" seuil 1`:`4×12'/2' seuil 1`;
+    const s2r = dist<=10?`8×1km/45" seuil 2`:dist<=21?`6×1,5km/1'15" seuil 2`:`5×2km/1'45" seuil 2`;
+    jours = [
+      {j:'Lundi',    m:{t:'EF matin',d:`${Math.round(efBase*vf)} km — allure ${allures.ef}`,z:'ef'},s:{t:'EF soir',d:`${Math.round(efBase*0.65*vf)} km`,z:'ef'}},
+      {j:'Mardi',    m:{t:'Double seuil 1',d:`${s1r} — allure ${allures.s1}`,z:'s1'},s:{t:'EF récup',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'}},
+      {j:'Mercredi', m:{t:'EF matin',d:`${Math.round(efBase*vf)} km`,z:'ef'},s:{t:'Renforcement OBLIGATOIRE',d:'Gainage, squats, fessiers, ischios — 35 min · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-bas-du-corps-pour-dominer-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Bas du corps ↗</a> · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-haut-du-corps-pour-progresser-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Haut du corps ↗</a>',z:'renfo'}},
+      {j:'Jeudi',    m:{t:'Double seuil 2',d:`${s2r} — allure ${allures.s2}`,z:'s2'},s:{t:'EF récup',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'}},
+      {j:'Vendredi', m:{t:'EF léger',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'},s:null},
+      {j:'Samedi',   m:{t:'Côtes puissance',d:coteDesc(),z:'max'},s:null},
+      {j:'Dimanche', m:{t:'Sortie longue',d:longDesc(Math.round(efBase*2.0*vf)),z:'ef'},s:{t:'Renforcement OBLIGATOIRE',d:'Circuit complet fessiers + gainage — 35 min · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-bas-du-corps-pour-dominer-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Bas du corps ↗</a> · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-haut-du-corps-pour-progresser-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Haut du corps ↗</a>',z:'renfo'}},
+    ];
+  } else if (w<9) {
+    const sf = dist<=10?`5×6'/1' + 8×1km/45" seuil 1`:dist<=21?`4×8'/1'30" + 5×2km/1'45" seuil 1`:`3×12'/2' + 4×3km/2' seuil 1`;
+    const sq = dist<=10?`5×2km/45" + 20×400m/25" seuil 2`:dist<=21?`4×3km/1'30" + 12×600m/40" seuil 2`:`3×5km/1'45" + 8×1km/50" seuil 2`;
+    jours = [
+      {j:'Lundi',    m:{t:'EF matin',d:`${Math.round(efBase*vf)} km — allure ${allures.ef}`,z:'ef'},s:{t:'EF soir',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'}},
+      {j:'Mardi',    m:{t:'Double seuil COMPLET',d:sf,z:'s1'},s:{t:'EF récup',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'}},
+      {j:'Mercredi', m:{t:'EF matin',d:`${Math.round(efBase*vf)} km`,z:'ef'},s:{t:'Renforcement OBLIGATOIRE',d:'Circuit complet 40 min — fessiers, ischios, gainage · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-bas-du-corps-pour-dominer-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Bas du corps ↗</a> · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-haut-du-corps-pour-progresser-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Haut du corps ↗</a>',z:'renfo'}},
+      {j:'Jeudi',    m:{t:'Séance qualité complète',d:sq,z:'s2'},s:{t:'EF récup',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'}},
+      {j:'Vendredi', m:{t:'EF léger',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'},s:null},
+      {j:'Samedi',   m:{t:'Côtes max',d:coteDesc(),z:'max'},s:null},
+      {j:'Dimanche', m:{t:'Sortie longue spécifique',d:longDesc(Math.round(efBase*2.3*vf))+' avec 20% seuil 1',z:'s1'},s:{t:'Renforcement OBLIGATOIRE',d:'Fessiers, ischios, gainage — 35 min · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-bas-du-corps-pour-dominer-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Programme ↗</a>',z:'renfo'}},
+    ];
+  } else if (w===9) {
+    jours = [
+      {j:'Lundi',    m:{t:'EF',d:`${Math.round(efBase*vf*0.65)} km`,z:'ef'},s:{t:'EF soir',d:`${Math.round(efBase*0.45*vf)} km`,z:'ef'}},
+      {j:'Mardi',    m:{t:'Seuil 1 réduit',d:`4×6'/1' seuil 1 — allure ${allures.s1}`,z:'s1'},s:{t:'EF récup',d:`${Math.round(efBase*0.55*vf)} km`,z:'ef'}},
+      {j:'Mercredi', m:{t:'EF',d:`${Math.round(efBase*0.7*vf)} km`,z:'ef'},s:{t:'Renforcement léger',d:'25 min léger — intensité réduite · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-bas-du-corps-pour-dominer-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Programme ↗</a>',z:'renfo'}},
+      {j:'Jeudi',    m:{t:'Seuil 2 court',d:`5×1km/45" seuil 2 — allure ${allures.s2}`,z:'s2'},s:{t:'EF récup',d:`${Math.round(efBase*0.55*vf)} km`,z:'ef'}},
+      {j:'Vendredi', m:{t:'EF léger',d:`${Math.round(efBase*0.55*vf)} km`,z:'ef'},s:null},
+      {j:'Samedi',   m:{t:'Sortie moyenne',d:`${Math.round(efBase*1.3*vf)} km EF`,z:'ef'},s:null},
+      {j:'Dimanche', m:{t:'EF récup',d:`${Math.round(efBase*0.8*vf)} km`,z:'ef'},s:{t:'Renforcement',d:'Mollets, gainage — 20 min · <a href="https://www.seb-run-nature.com/2026/03/5-exercices-bas-du-corps-pour-dominer-en-trail.html" target="_blank" rel="noopener" style="color:var(--violet);font-weight:700;">Programme ↗</a>',z:'renfo'}},
+    ];
+  } else {
+    jours = [
+      {j:'Lundi',    m:{t:'EF léger',d:`${Math.round(efBase*0.45*vf)} km`,z:'ef'},s:null},
+      {j:'Mardi',    m:{t:'Seuil 1 mini',d:`3×6'/1' seuil 1 — allure ${allures.s1}`,z:'s1'},s:{t:'EF',d:`${Math.round(efBase*0.35*vf)} km`,z:'ef'}},
+      {j:'Mercredi', m:{t:'REPOS',d:'Récupération totale',z:'repos'},s:null},
+      {j:'Jeudi',    m:{t:'EF + striders',d:`${Math.round(efBase*0.35*vf)} km + 6×80m vif`,z:'ef'},s:null},
+      {j:'Vendredi', m:{t:'REPOS',d:'Préparation mentale',z:'repos'},s:null},
+      {j:'Samedi',   m:{t:'Très léger',d:`${Math.round(efBase*0.25*vf)} km EF`,z:'ef'},s:null},
+      {j:'Dimanche', m:{t:'EF calme',d:`${Math.round(efBase*0.35*vf)} km`,z:'ef'},s:null},
+    ];
+  }
+
+  // Appliquer les adaptations cycle si disponible
+  if (cycleInfo && planData) {
+    jours = jours.map((jour, di) => {
+      const dayDate = planData.startDate
+        ? new Date(planData.startDate.getTime() + (w*7+di)*86400000)
+        : new Date(new Date(planData.genereLe).getTime() + (w*7+di)*86400000);
+      const j1 = new Date(cycleInfo.j1);
+      let diffDays = Math.floor((dayDate - j1) / 86400000);
+      while (diffDays >= cycleInfo.cycleDuration) diffDays -= cycleInfo.cycleDuration;
+      while (diffDays < 0) diffDays += cycleInfo.cycleDuration;
+      const jourCycle = diffDays + 1;
+      const phase = getPhaseForDay(jourCycle, cycleInfo);
+      const pl = phaseLabel(phase);
+      return {
+        ...jour,
+        jourCycle,
+        phase,
+        phaseLabel: pl,
+        m: jour.m ? adapterSeanceAuCycle(jour.m, phase, allures, jourCycle) : null,
+        s: jour.s ? adapterSeanceAuCycle(jour.s, phase, allures, jourCycle) : null,
+      };
+    });
+  }
+
+  // Repos supplémentaires selon âge (W50+)
+  jours = injecterReposFemme(jours, profil.cat, w);
+
+  // Semaines de décharge allégée -25% — uniquement W55+ (cycle gère déjà pour les autres)
+  const dechargeW = getDechargeWeeksFemme(profil.cat);
+  if (dechargeW.includes(w) && w < 9) {
+    jours = jours.map(j => {
+      const adapt = (s) => {
+        if (!s || s.z === 'repos' || s.z === 'renfo') return s;
+        const d2 = s.d.replace(/\b(\d+)\s*km/g, (m,n) => Math.round(parseInt(n)*0.75)+' km');
+        return {...s, d:d2};
+      };
+      return {...j, m:adapt(j.m), s:adapt(j.s)};
+    });
+    phase = {...phase, nom: phase.nom+' ↓', desc: 'Semaine allégée — -25% volume · récupération active'};
+  }
+
+  return {phase, jours};
+}
+
+// ══════════════════════════════════════════════════════════
+// RENDER
+// ══════════════════════════════════════════════════════════
+function zoneClass(z) {
+  return {ef:'s-ef',s1:'s-s1',s2:'s-s2',max:'s-max',renfo:'s-renfo',repos:'s-repos',regles:'s-regles',ovul:'s-ovul'}[z]||'s-ef';
+}
+
+var MSGS_F = {
+  0:  ["Premier pas difficile ? Normal. Reviens demain !","Le repos fait aussi partie du plan. Demain on repart !","Chaque semaine recommence. Celle-ci aussi."],
+  25: ["Tu as demarre - c'est deja bien. Continue.","25% c'est un bon depart. La dynamique est lancee.","Bon debut. Le reste t'attend."],
+  50: ["La moitie du chemin est faite. Bien joue !","50% - tu tiens le cap. Le corps s'adapte.","Mi-semaine solide. Continue comme ca."],
+  75: ["Tres belle semaine ! Presque au bout.","75% - tu construis quelque chose de fort.","Le travail paye. Continue."],
+  99: ["Semaine quasi-parfaite ! Bravo.","99% - la regularite c'est ta force.","Presque 100%. Tu es sur la bonne voie."],
+  100:["SEMAINE PARFAITE. Chaque seance te rapproche de ton objectif.","100% ! Ton futur moi te remercie.","Semaine complete. Recupere bien."]
+};
+function getMsgF(pct){var keys=[100,99,75,50,25,0];var key=keys.find(function(k){return pct>=k;});var arr=MSGS_F[key]||MSGS_F[0];return arr[Math.floor(Math.random()*arr.length)];}
+function checkKeyF(w,ji,slot){return 'snpf_w'+w+'_j'+ji+'_'+slot;}
+function getCheckF(w,ji,slot){try{return localStorage.getItem(checkKeyF(w,ji,slot))==='1';}catch(e){return false;}}
+function setCheckF(w,ji,slot,val){try{localStorage.setItem(checkKeyF(w,ji,slot),val?'1':'0');}catch(e){}}
+function updateSummaryF(w){
+  var sd=planData.semaines[w];var total=0,done=0;
+  sd.jours.forEach(function(jour,ji){if(jour.m){total++;if(getCheckF(w,ji,'m'))done++;}if(jour.s){total++;if(getCheckF(w,ji,'s'))done++;}});
+  var pct=total>0?Math.round(done/total*100):0;
+  document.getElementById('wsSumBar').style.width=pct+'%';
+  document.getElementById('wsSumPct').textContent=pct+'%';
+  document.getElementById('wsSumDetail').textContent=done+' seance'+(done>1?'s':'')+' effectuee'+(done>1?'s':'')+' sur '+total;
+  document.getElementById('wsSumMsg').textContent=getMsgF(pct);
+  document.getElementById('weekSummary').style.display='block';
+}
+function onCheckF(w,ji,slot,el){
+  setCheckF(w,ji,slot,el.checked);
+  var sessionEl=el.closest('.session');if(sessionEl)sessionEl.classList.toggle('done',el.checked);
+  var lbl=el.parentElement.querySelector('.session-check-label');
+  if(lbl)lbl.textContent=el.checked?'Seance effectuee':'Marquer comme effectuee';
+  updateSummaryF(w);
+}
+function renderSemaine(w) {
+  if (!planData) return;
+  const sd = planData.semaines[w];
+  document.getElementById('weekNum').textContent = `Semaine ${w+1} / 12`;
+  document.getElementById('weekPhase').textContent = `${sd.phase.icon} ${sd.phase.nom} — ${sd.phase.desc}`;
+  const wdEl = document.getElementById('weekDates');
+  if (wdEl && planData.startDate) {
+    const wd = getWeekDates(planData.startDate, w);
+    wdEl.textContent = wd ? wd.label : '';
+  }
+  document.getElementById('weekProgressFill').style.width = `${((w+1)/12)*100}%`;
+  document.getElementById('btnPrev').disabled = w===0;
+  document.getElementById('btnNext').disabled = w===11;
+
+  // Info cycle de la semaine
+  const wci = document.getElementById('weekCycleInfo');
+  if (sd.jours[0] && sd.jours[0].phase) {
+    const phases = [...new Set(sd.jours.map(j=>j.phase))];
+    const phasesHtml = phases.map(ph => {
+      const pl = phaseLabel(ph);
+      return `<span style="padding:3px 10px;border-radius:12px;font-size:.72rem;font-weight:700;" class="${pl.cls}">${pl.nom}</span>`;
+    }).join(' ');
+    wci.style.display = 'block';
+    wci.innerHTML = `<div style="font-size:.78rem;color:var(--mut);margin-bottom:6px;">Phases du cycle cette semaine :</div><div style="display:flex;flex-wrap:wrap;gap:6px;">${phasesHtml}</div>`;
+  } else {
+    wci.style.display = 'none';
+  }
+
+  const grid = document.getElementById('weekGrid');
+  grid.innerHTML = '';
+  const joursOrdre = ['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'];
+  sd.jours.forEach(function(jour, di) {
+    var ji=di;
+    var card=document.createElement('div');
+    card.className='day-card';
+    var phTag=jour.phaseLabel?'<span class="day-phase-tag '+jour.phaseLabel.cls+'" style="font-size:.63rem;padding:2px 7px;border-radius:8px;">'+jour.phaseLabel.nom.split(' ')[0]+' J'+jour.jourCycle+'</span>':'';
+    var sessions=[jour.m,jour.s].filter(Boolean);
+    var dayDate=planData.startDate?getDayDate(planData.startDate,w,joursOrdre.indexOf(jour.j)>=0?joursOrdre.indexOf(jour.j):di):'';
+    function sHTMLF(s,slot){
+      if(!s)return '';
+      var isDone=getCheckF(w,ji,slot);
+      var ckId='ckf_'+w+'_'+ji+'_'+slot;
+      return '<div class="session '+zoneClass(s.z)+(isDone?' done':'')+'"><span class="session-time">'+(slot==='m'?'Matin':'Soir')+'</span><div class="session-content"><div class="session-title">'+s.t+'</div><div class="session-detail">'+s.d+'</div></div></div>'
+        +'<label class="session-check" for="'+ckId+'"><input type="checkbox" id="'+ckId+'" data-w="'+w+'" data-ji="'+ji+'" data-slot="'+slot+'" '+(isDone?'checked':'')+' onchange="onCheckF(+this.dataset.w,+this.dataset.ji,this.dataset.slot,this)"/><span class="session-check-label">'+(isDone?'Seance effectuee':'Marquer comme effectuee')+'</span></label>';
+    }
+    card.innerHTML='<div class="day-header" style="background:var(--bg);border-bottom:1px solid var(--brd);"><span class="day-name">'+jour.j+(dayDate?' <span style="font-size:.65rem;font-weight:600;opacity:.6;">'+dayDate+'</span>':'')+'</span><div style="display:flex;align-items:center;gap:6px;">'+phTag+'<span style="font-size:.72rem;color:var(--mut);">'+sessions.length+' seance'+(sessions.length>1?'s':'')+'</span></div></div>'
+      +'<div class="day-sessions">'+sHTMLF(jour.m,'m')+sHTMLF(jour.s,'s')+'</div>';
+    grid.appendChild(card);
+  });
+  updateSummaryF(w);
+}
+
+function changerSemaine(dir) {
+  currentWeek = Math.max(0, Math.min(11, currentWeek+dir));
+  renderSemaine(currentWeek);
+  document.getElementById('planOutput').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ══════════════════════════════════════════════════════════
+// GÉNÉRER LE PLAN
+// ══════════════════════════════════════════════════════════
+function genererPlan() {
+  const profil = {
+    cat:        document.getElementById('catAge').value,
+    niveau:     document.getElementById('niveau').value,
+    objectif:   document.getElementById('objectif').value,
+    terrain:    document.getElementById('terrain').value,
+    dplusCourse:parseInt(document.getElementById('dplusCourse').value)||0,
+    nomCourse:  document.getElementById('nomCourse').value||'Ma compétition',
+    dateCourse: document.getElementById('dateCourse').value,
+    fcRepos:    parseInt(document.getElementById('fcRepos').value)||0,
+  };
+
+  const allures = calcAllures(profil);
+  if (!allures) { showToast('⚠️ Entre un chrono ou une distance de test !'); return; }
+
+  // Cycle
+  const dur = parseInt(document.getElementById('cycleDuration').value)||29;
+  const per = parseInt(document.getElementById('periodDuration').value)||5;
+  const j1  = document.getElementById('lastJ1').value;
+  const cycleInfo = j1 ? calcCyclePhases(j1, dur, per) : null;
+
+  const semaines = [];
+  for (let w=0; w<12; w++) semaines.push(genSemaine(w, profil, allures, cycleInfo));
+
+  const startDate = getStartDate(profil.dateCourse);
+  planData = {profil, allures, cycleInfo, semaines, startDate, genereLe: new Date().toISOString()};
+  currentWeek = 0;
+
+  // Header
+  const dateFmt = profil.dateCourse
+    ? new Date(profil.dateCourse).toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'})
+    : 'Date à définir';
+  const startDateFmt = startDate
+    ? startDate.toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'})
+    : '';
+  const planRangeFmt = startDateFmt ? `${startDateFmt} → ${dateFmt}` : dateFmt;
+
+  // Phase actuelle
+  let phaseActuelle = '';
+  if (cycleInfo && j1) {
+    const jc = jourCycleActuel(j1, dur);
+    const ph = getPhaseForDay(jc, cycleInfo);
+    const pl = phaseLabel(ph);
+    phaseActuelle = `<span>♀️ Aujourd'hui J${jc} — ${pl.nom}</span>`;
+    // Indicator
+    const ci = document.getElementById('cycleIndicator');
+    ci.style.display = 'flex';
+    document.getElementById('ciPhaseName').textContent = pl.nom;
+    document.getElementById('ciphaSub').textContent = `Jour ${jc} du cycle · ${pl.sub}`;
+    const ciAl = document.getElementById('ciAlerte');
+    if (ph === 'ovulation') ciAl.innerHTML = `<div class="alerte alerte-warning" style="font-size:.75rem;">⚠️ Ovulation — vigilance ligamentaire aujourd&apos;hui</div>`;
+    else if (ph === 'luteal') ciAl.innerHTML = `<div class="alerte alerte-violet" style="font-size:.75rem;">🟣 Phase lutéale — FC +5-10 bpm attendu · allures ajustées</div>`;
+    else if (ph === 'regles') ciAl.innerHTML = `<div class="alerte alerte-danger" style="font-size:.75rem;">🔴 Règles — intensité réduite · écoute ton corps</div>`;
+    else ciAl.innerHTML = `<div class="alerte alerte-info" style="font-size:.75rem;">🟢 Phase folliculaire — période optimale pour l'intensité</div>`;
+  }
+
+  const fcNote = profil.fcRepos > 0
+    ? `<span>❤️ FC repos ${profil.fcRepos} bpm → Phase lutéale ~${profil.fcRepos+8} bpm</span>` : '';
+
+  document.getElementById('planHeader').innerHTML = `
+    <div class="plan-title">♀️ ${profil.nomCourse}</div>
+    <div class="plan-meta">
+      <span>📅 ${dateFmt}</span>
+      ${startDateFmt ? `<span>🗓️ Plan : ${planRangeFmt}</span>` : ''}
+      <span>🏃 ${profil.objectif} km</span>
+      <span>👤 ${profil.cat}</span>
+      <span>📊 ${profil.niveau.charAt(0).toUpperCase()+profil.niveau.slice(1)}</span>
+      ${phaseActuelle}
+      ${fcNote}
+    </div>
+    <div class="plan-allures">
+      <div class="pac-card"><div class="pac-val">${allures.ef}</div><div class="pac-lbl">🟢 EF</div></div>
+      <div class="pac-card"><div class="pac-val">${allures.s1}</div><div class="pac-lbl">🟡 Seuil 1</div></div>
+      <div class="pac-card"><div class="pac-val">${allures.s2}</div><div class="pac-lbl">🟠 Seuil 2</div></div>
+      <div class="pac-card"><div class="pac-val">${allures.s1Luteal}</div><div class="pac-lbl">🟣 S1 Lutéale</div></div>
+      <div class="pac-card"><div class="pac-val">${allures.s2Luteal}</div><div class="pac-lbl">🟣 S2 Lutéale</div></div>
+    </div>`;
+
+  document.getElementById('planOutput').style.display = 'block';
+  renderSemaine(0);
+  // Date journal par défaut
+  document.getElementById('journalDate').value = new Date().toISOString().slice(0,10);
+  renderJournalHistory();
+  showToast('✅ Plan généré avec adaptation cycle !');
+  setTimeout(() => document.getElementById('planOutput').scrollIntoView({behavior:'smooth'}), 200);
+}
+
+// ══════════════════════════════════════════════════════════
+// RESSENTI / JOURNAL
+// ══════════════════════════════════════════════════════════
+function selRessenti(type, val, btn) {
+  selectedEnergie = val;
+  document.querySelectorAll('#energieGrid .ressenti-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+}
+function selDouleur(val) {
+  selectedDouleur = val;
+  document.getElementById('btn-douleur-non').classList.toggle('selected', !val);
+  document.getElementById('btn-douleur-oui').classList.toggle('selected', val);
+}
+function sauvegarderJournal() {
+  const date = document.getElementById('journalDate').value;
+  const note = document.getElementById('journalNote').value;
+  if (!date) { showToast('⚠️ Sélectionne une date'); return; }
+  ressentiData[date] = {energie: selectedEnergie, douleur: selectedDouleur, note};
+  localStorage.setItem('journalCycle', JSON.stringify(ressentiData));
+  showToast('💾 Ressenti enregistré !');
+  renderJournalHistory();
+}
+function renderJournalHistory() {
+  const el = document.getElementById('journalHistory');
+  if (!el) return;
+  const keys = Object.keys(ressentiData).sort().reverse().slice(0,7);
+  if (!keys.length) { el.innerHTML = ''; return; }
+  const enIcons = ['','😴','😔','😐','🙂','💪'];
+  el.innerHTML = `<div style="font-size:.75rem;font-weight:700;color:var(--mut);margin-bottom:8px;text-transform:uppercase;letter-spacing:.4px;">7 derniers jours</div>`
+    + keys.map(d => {
+      const r = ressentiData[d];
+      return `<div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--brd);font-size:.8rem;">
+        <span style="color:var(--mut);min-width:80px;">${d}</span>
+        <span>${r.energie ? enIcons[r.energie]+' '+r.energie+'/5' : '—'}</span>
+        <span>${r.douleur === true ? '⚠️ Douleurs' : r.douleur === false ? '✅ OK' : '—'}</span>
+        <span style="color:var(--mut);font-size:.75rem;">${r.note||''}</span>
+      </div>`;
+    }).join('');
+}
+
+// ══════════════════════════════════════════════════════════
+// MODAL MISE À JOUR CYCLE
+// ══════════════════════════════════════════════════════════
+function ouvrirCycleModal() { document.getElementById('cycleModal').classList.add('open'); }
+function fermerCycleModal() { document.getElementById('cycleModal').classList.remove('open'); }
+function closeCycleIfOverlay(e) { if (e.target === document.getElementById('cycleModal')) fermerCycleModal(); }
+function mettreAJourCycle() {
+  const newJ1 = document.getElementById('newJ1').value;
+  const newDur = parseInt(document.getElementById('newCycleDuration').value);
+  if (!newJ1) { showToast('⚠️ Entre la date J1'); return; }
+  if (!planData) return;
+  const dur = newDur || planData.cycleInfo?.cycleDuration || 29;
+  const per = planData.cycleInfo?.periodDuration || 5;
+  const el = document.getElementById('modalCycleAlerte');
+  if (dur < 21 || dur > 35) {
+    el.innerHTML = `<div class="alerte alerte-danger">⚠️ Cycle irrégulier (${dur} jours) — consulte un médecin du sport</div>`;
+  } else {
+    el.innerHTML = '';
+    planData.cycleInfo = calcCyclePhases(newJ1, dur, per);
+    // Régénérer les semaines avec le nouveau cycle
+    const allures = planData.allures;
+    for (let w=0; w<12; w++) {
+      planData.semaines[w] = genSemaine(w, planData.profil, allures, planData.cycleInfo);
+    }
+    renderSemaine(currentWeek);
+    fermerCycleModal();
+    showToast('♀️ Cycle mis à jour — plan recalculé !');
+  }
+}
+
+// ══════════════════════════════════════════════════════════
+function imprimerSemaine() {
+  if (!planData) return;
+  var w=currentWeek,sd=planData.semaines[w],p=planData.profil;
+  var joursOrdre=['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'];
+  var wd=planData.startDate?getWeekDates(planData.startDate,w):null;
+  var dateFmt=p.dateCourse?new Date(p.dateCourse).toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'}):'';
+  var zBg={ef:'#dcfce7',s1:'#fef9c3',s2:'#ffedd5',max:'#fee2e2',renfo:'#ede9fe',repos:'#f3f4f6',regles:'#fee2e2',ovul:'#fce7f3'};
+  var zTc={ef:'#166534',s1:'#854d0e',s2:'#9a3412',max:'#991b1b',renfo:'#5b21b6',repos:'#6b7280',regles:'#991b1b',ovul:'#9d174d'};
+  var total=0,done=0,rows='';
+  sd.jours.forEach(function(jour,ji){
+    var dayDate=planData.startDate?getDayDate(planData.startDate,w,joursOrdre.indexOf(jour.j)):'' ;
+    var cycleTag=jour.phaseLabel?' | '+jour.phaseLabel.nom+' J'+jour.jourCycle:'';
+    function slotRow(s,slot){
+      if(!s)return '';var isDone=getCheckF(w,ji,slot);total++;if(isDone)done++;
+      var bg=zBg[s.z]||'#f9fafb',tc=zTc[s.z]||'#374151';
+      var box='<span style="display:inline-block;width:13px;height:13px;border:1.5px solid #9ca3af;border-radius:3px;margin-right:5px;vertical-align:middle;background:'+(isDone?'#be185d':'#fff')+';"></span>';
+      var dl=isDone?' <span style="color:#be185d;font-weight:700;font-size:9px;">Effectuee</span>':'';
+      return '<tr><td style="padding:6px 9px;font-weight:700;font-size:10px;border-bottom:1px solid #e5e7eb;white-space:nowrap;">'+(slot==='m'?'Matin':'Soir')+'</td><td style="padding:6px 9px;background:'+bg+';border-bottom:1px solid #e5e7eb;"><div style="font-weight:700;color:'+tc+';font-size:10px;">'+s.t+dl+'</div><div style="color:#6b7280;font-size:9px;margin-top:1px;">'+s.d+'</div></td><td style="padding:6px 9px;text-align:center;border-bottom:1px solid #e5e7eb;">'+box+'</td></tr>';
+    }
+    rows+='<tr style="background:#fdf2f8;"><td colspan="3" style="padding:7px 9px;font-weight:800;color:#9d174d;font-size:11px;border-bottom:1px solid #f9a8d4;">'+jour.j+(dayDate?' - '+dayDate:'')+cycleTag+'</td></tr>';
+    rows+=slotRow(jour.m,'m')+slotRow(jour.s,'s');
+  });
+  var pct=total>0?Math.round(done/total*100):0;
+  var al=planData.allures?'<div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:8px;"><span style="background:#dcfce7;color:#166534;border-radius:5px;padding:2px 9px;font-size:9px;font-weight:700;">EF '+planData.allures.ef+'</span><span style="background:#fef9c3;color:#854d0e;border-radius:5px;padding:2px 9px;font-size:9px;font-weight:700;">S1 '+planData.allures.s1+'</span><span style="background:#ffedd5;color:#9a3412;border-radius:5px;padding:2px 9px;font-size:9px;font-weight:700;">S2 '+planData.allures.s2+'</span><span style="background:#fee2e2;color:#991b1b;border-radius:5px;padding:2px 9px;font-size:9px;font-weight:700;">Max '+planData.allures.max+'</span></div>':'';
+  var cycleNote=planData.cycleInfo?'<div style="font-size:9px;color:#9d174d;margin-top:4px;">Cycle '+planData.cycleInfo.cycleDuration+' jours - Regles '+planData.cycleInfo.periodDuration+' jours</div>':'';
+  var html='<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Semaine '+(w+1)+' - '+p.nomCourse+'</title>'
+    +'<style>@page{size:A4 portrait;margin:1.4cm;}*{box-sizing:border-box;margin:0;padding:0;}body{font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#1f2937;}</style>'
+    +'</head><body>'
+    +'<div style="border-bottom:3px solid #9d174d;padding-bottom:10px;margin-bottom:12px;">'
+    +'<div style="font-size:17px;font-weight:800;color:#9d174d;">'+p.nomCourse+'</div>'
+    +'<div style="font-size:10px;color:#6b7280;margin-top:2px;">'+p.objectif+' km - '+p.cat+(dateFmt?' - '+dateFmt:'')+(p.dplusCourse>0?' - D+ '+p.dplusCourse.toLocaleString()+' m':'')+'</div>'
+    +al+cycleNote+'</div>'
+    +'<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">'
+    +'<div><div style="font-size:13px;font-weight:800;color:#9d174d;">Semaine '+(w+1)+'/12 - '+sd.phase.icon+' '+sd.phase.nom+'</div>'
+    +(wd?'<div style="font-size:9px;color:#6b7280;">'+wd.label+'</div>':'')+'<div style="font-size:9px;color:#9ca3af;">'+sd.phase.desc+'</div></div>'
+    +'<div style="text-align:right;"><div style="font-size:18px;font-weight:800;color:#be185d;">'+pct+'%</div>'
+    +'<div style="font-size:9px;color:#6b7280;">'+done+'/'+total+' seances</div></div></div>'
+    +'<div style="background:#e5e7eb;border-radius:4px;height:7px;margin-bottom:12px;"><div style="width:'+pct+'%;background:#be185d;height:100%;border-radius:4px;"></div></div>'
+    +'<table style="width:100%;border-collapse:collapse;">'
+    +'<thead><tr><th style="text-align:left;padding:6px 9px;background:#9d174d;color:#fdf2f8;font-size:9px;border-radius:8px 0 0 0;">Moment</th>'
+    +'<th style="text-align:left;padding:6px 9px;background:#9d174d;color:#fdf2f8;font-size:9px;">Seance</th>'
+    +'<th style="text-align:center;padding:6px 9px;background:#9d174d;color:#fdf2f8;font-size:9px;border-radius:0 8px 0 0;">Fait</th></tr></thead>'
+    +'<tbody>'+rows+'</tbody></table>'
+    +'<div style="margin-top:12px;padding:9px 12px;background:#fdf2f8;border-radius:8px;font-size:9px;color:#6b7280;border:1px solid #f9a8d4;">'
+    +'Les coches sont sauvegardees dans le navigateur de cet appareil uniquement. - Seb Run Nature - seb-run-nature.com</div>'
+    +'</body></html>';
+  var win=window.open('','_blank','width=800,height=600');
+  if(!win){alert('Autorise les popups pour imprimer.');return;}
+  win.document.write(html);win.document.close();win.focus();
+  setTimeout(function(){win.print();},400);
+}
+
+// SAVE / EXPORT / IMPORT
+// ══════════════════════════════════════════════════════════
+function sauvegarder() {
+  if (!planData) return;
+  localStorage.setItem('planNorveF', JSON.stringify({planData, ressentiData, profilHormonal}));
+  showToast('💾 Plan sauvegardé !');
+}
+function exporterJSON() {
+  if (!planData) return;
+  const blob = new Blob([JSON.stringify({planData, ressentiData}, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `plan-norvegien-femme-${planData.profil.nomCourse.replace(/\s/g,'-')}.json`;
+  a.click();
+  showToast('📤 Plan exporté !');
+}
+function importerJSON(e) {
+  const f = e.target.files[0];
+  if (!f) return;
+  const r = new FileReader();
+  r.onload = ev => {
+    try {
+      const d = JSON.parse(ev.target.result);
+      planData = d.planData || d;
+      ressentiData = d.ressentiData || {};
+      document.getElementById('planOutput').style.display = 'block';
+      renderSemaine(currentWeek);
+      renderJournalHistory();
+      showToast('📥 Plan importé !');
+    } catch { showToast('❌ Fichier invalide'); }
+  };
+  r.readAsText(f);
+}
+function resetPlan() {
+  if (!confirm('Effacer le plan et le journal ?')) return;
+  localStorage.removeItem('planNorveF');
+  planData = null; ressentiData = {};
+  document.getElementById('planOutput').style.display = 'none';
+  showToast('🗑 Plan effacé.');
+}
+
+// CHEMIN
+function setChemin(c) {
+  cheminActif = c;
+  document.getElementById('btnChrono').classList.toggle('active', c==='chrono');
+  document.getElementById('btnTest').classList.toggle('active', c==='test');
+  document.getElementById('sectionChrono').classList.toggle('show', c==='chrono');
+  document.getElementById('sectionTest').classList.toggle('show', c==='test');
+}
+
+// TERRAIN
+document.addEventListener('DOMContentLoaded', () => {
+  // Année footer
+  const fy = document.getElementById('footerYear');
+  if (fy) fy.textContent = new Date().getFullYear();
+
+  // Graphique cycle interactif
+  initGraphDots();
+
+  document.getElementById('terrain').addEventListener('change', function() {
+    const g = document.getElementById('dplusGroup');
+    g.style.display = this.value !== 'route' ? 'flex' : 'none';
+    g.style.flexDirection = 'column'; g.style.gap = '6px';
+  });
+  // Cycle preview auto
+  ['cycleDuration','periodDuration','lastJ1'].forEach(id => {
+    document.getElementById(id).addEventListener('change', updateCyclePreview);
+  });
+  // Date par défaut
+  const d = new Date(); d.setDate(d.getDate()+84);
+  document.getElementById('dateCourse').value = d.toISOString().slice(0,10);
+  // Restaurer
+  const saved = localStorage.getItem('planNorveF');
+  if (saved) {
+    try {
+      const data = JSON.parse(saved);
+      planData = data.planData || data;
+      ressentiData = data.ressentiData || {};
+      if (data.profilHormonal) {
+        profilHormonal = data.profilHormonal;
+        setProfilHormonal(profilHormonal);
+      }
+      document.getElementById('planOutput').style.display = 'block';
+      renderSemaine(0);
+      renderJournalHistory();
+      showToast('💾 Plan précédent restauré !');
+    } catch {}
+  }
+  // Ressenti data
+  const jr = localStorage.getItem('journalCycle');
+  if (jr) try { ressentiData = JSON.parse(jr); renderJournalHistory(); } catch {}
+  // Date journal
+  document.getElementById('journalDate').value = new Date().toISOString().slice(0,10);
+});
+
+// TOAST
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2800);
+}
+</script>
+</body>
+</html>
